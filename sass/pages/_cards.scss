@@ -1,40 +1,54 @@
+body {
+  background-image: url("../Content/img/lacebg.jpg");
+  background-size: cover;
+  background-color: rgba(149, 20, 20, 0.3);
+  background-blend-mode: overlay;
+}
+
 img {
-  height: 300px;
-  width: 155px;
+  height: 400px;
+  width: auto;
+    border-radius: 10px;
 }
 .card {
-    perspective: 700px;
-    position: absolute;
-    left: 45%;
-    top: 40%;
-    animation-duration: 6s;
-    animation-fill-mode:forwards;
+  perspective: 700px;
+  position: absolute;
+  left: 45%;
+  top: 35%;
+  animation-duration: 6s;
+  animation-fill-mode:forwards;
 }
 .card:hover .front{
-    transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  // animation: frontFlipped 1s 6s ;
 }
 .card:hover .back {
-    transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  // animation: backStay 1s 6s forwards;
 }
 .card:hover .face {
-    transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
 }
 .face {
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    transition: all 0.8s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: all 0.8s ease-out;
 }
 .front {
-    transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  // box-shadow: 2px 2px 5px 2px rgb(0,0,0);
 }
+
 .back {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  // box-shadow: 2px 2px 5px 2px rgb(0,0,0);
 }
 
 #bird {
   animation-name: slideBottom;
+
 }
 #dog{
   animation-name: slideLeft;
@@ -55,9 +69,31 @@ img {
 }
 @keyframes slideBottom {
 	from { top: 40%; }
-	to { top: 65%; }
+	to { top: 68%; }
 }
 @keyframes slideTop {
 	from { top: 40%; }
-	to { top: 15%; }
+	to { top: 2%; }
 }
+//
+// @keyframes frontFlipped {
+//   0%{
+//     transform: rotateY(0deg);
+//     // animation-delay: 6s;
+//     }
+//   100%{
+//     transform: rotateY(-180deg);
+//     // animation-fill-mode: forwards;
+//   }
+// }
+//
+// @keyframes backStay {
+//   0%{
+//     transform: rotateY(-180deg);
+//     // animation-delay: 6s;
+//     }
+//   100%{
+//     transform: rotateY(0deg);
+//     // animation-fill-mode: forwards;
+//   }
+// }

@@ -372,15 +372,22 @@ template {
 body {
   overflow: hidden; }
 
+body {
+  background-image: url("../Content/img/lacebg.jpg");
+  background-size: cover;
+  background-color: rgba(149, 20, 20, 0.3);
+  background-blend-mode: overlay; }
+
 img {
-  height: 300px;
-  width: 155px; }
+  height: 400px;
+  width: auto;
+  border-radius: 10px; }
 
 .card {
   perspective: 700px;
   position: absolute;
   left: 45%;
-  top: 40%;
+  top: 35%;
   animation-duration: 6s;
   animation-fill-mode: forwards; }
 
@@ -432,11 +439,11 @@ img {
   from {
     top: 40%; }
   to {
-    top: 65%; } }
+    top: 68%; } }
 @keyframes slideTop {
   from {
     top: 40%; }
   to {
-    top: 15%; } }
+    top: 2%; } }
 
 /*# sourceMappingURL=main.css.map */
