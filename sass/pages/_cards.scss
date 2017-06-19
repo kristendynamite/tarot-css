@@ -1,0 +1,63 @@
+img {
+  height: 300px;
+  width: 155px;
+}
+.card {
+    perspective: 700px;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    animation-duration: 6s;
+    animation-fill-mode:forwards;
+}
+.card:hover .front{
+    transform: rotateY(-180deg);
+}
+.card:hover .back {
+    transform: rotateY(0deg);
+}
+.card:hover .face {
+    transition: all 0.8s ease-out;
+}
+.face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: all 0.8s ease-out;
+}
+.front {
+    transform: rotateY(0deg);
+}
+.back {
+    transform: rotateY(180deg);
+}
+
+#bird {
+  animation-name: slideBottom;
+}
+#dog{
+  animation-name: slideLeft;
+}
+#ancestor{
+  animation-name: slideRight;
+ }
+#sea {
+  animation-name: slideTop;
+}
+@keyframes slideRight {
+	from { left: 45%; }
+	to { left: 60%; }
+}
+@keyframes slideLeft {
+	from { left: 45%; }
+	to { left: 30%; }
+}
+@keyframes slideBottom {
+	from { top: 40%; }
+	to { top: 65%; }
+}
+@keyframes slideTop {
+	from { top: 40%; }
+	to { top: 15%; }
+}
