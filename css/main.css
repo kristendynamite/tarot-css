@@ -369,6 +369,7 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {}
 body {
   overflow: hidden; }
 
@@ -376,7 +377,63 @@ body {
   background-image: url("../Content/img/lacebg.jpg");
   background-size: cover;
   background-color: rgba(149, 20, 20, 0.3);
-  background-blend-mode: overlay; }
+  background-blend-mode: overlay;
+  font-family: 'IM Fell DW Pica', serif; }
+
+.nav ul {
+  display: inline-flex;
+  float: right;
+  margin-right: 10vw; }
+  .nav ul li {
+    list-style: none;
+    padding: 20px;
+    font-size: 1.5em; }
+    .nav ul li a {
+      text-decoration: none;
+      color: #a4a3a2; }
+      .nav ul li a:hover {
+        color: #724e4e;
+        font-weight: bold; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: .2; }
+  50% {
+    opacity: .4; }
+  75% {
+    opacity: .7; }
+  100% {
+    opacity: 1; } }
+.text-box {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  font-size: 1.5em;
+  text-align: center; }
+  .text-box .divination {
+    border: 2px dotted #e3e3df;
+    border-radius: 5px;
+    color: #e3e3df;
+    animation: fadeIn 6s;
+    padding-left: 10px;
+    padding-right: 10px; }
+
+button {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'IM Fell DW Pica', serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  background: #543939;
+  color: black;
+  margin-top: 30px; }
+  button:hover {
+    background: black;
+    color: #543939; }
 
 img {
   height: 400px;
@@ -386,8 +443,8 @@ img {
 .card {
   perspective: 700px;
   position: absolute;
-  left: 45%;
-  top: 35%;
+  left: 45vw;
+  top: 35vh;
   animation-duration: 6s;
   animation-fill-mode: forwards; }
 
@@ -427,23 +484,23 @@ img {
 
 @keyframes slideRight {
   from {
-    left: 45%; }
+    left: 45vw; }
   to {
-    left: 60%; } }
+    left: 60vw; } }
 @keyframes slideLeft {
   from {
-    left: 45%; }
+    left: 45vw; }
   to {
-    left: 30%; } }
+    left: 30vw; } }
 @keyframes slideBottom {
   from {
-    top: 40%; }
+    top: 40vh; }
   to {
-    top: 68%; } }
+    top: 68vh; } }
 @keyframes slideTop {
   from {
-    top: 40%; }
+    top: 40vh; }
   to {
-    top: 2%; } }
+    top: 2vh; } }
 
 /*# sourceMappingURL=main.css.map */
