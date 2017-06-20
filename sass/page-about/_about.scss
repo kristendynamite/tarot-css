@@ -1,0 +1,48 @@
+body{
+  background-image: url("../Content/img/lacebg.jpg");
+  background-size: cover;
+      font-family: $primary-font;
+  // background-color: rgba(149, 20, 20, 0.3);
+  // background-blend-mode: overlay;
+  h1 {
+    color: $primary-color;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 50px;
+  }
+  .about{
+    position: relative;
+    top: 10vh;
+    left: 25vw;
+    width: 55%;
+    background-color: $primary-color;
+    border: solid 1px white;
+    content: "";
+    display: table;
+    clear: both;
+    border-radius: 5px;
+    .madame-image{
+      float: right;
+      img{
+        height: 500px;
+        border-radius: 5px;
+        padding-right: 20px;
+        }
+      }
+    .madame-content{
+      position: absolute;
+      left: 5%;
+      top: 12%;
+      float: left;
+      width: 70%;
+      text-align: center;
+      z-index: 50;
+      padding-left: 1px;
+      padding-right: 1px;
+      p{
+        color: black;
+        font-size: 1.3em;
+      }
+    }
+  }
+}

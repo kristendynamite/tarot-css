@@ -374,33 +374,43 @@ body {
   overflow: hidden; }
 
 body {
-  background-color: black;
-  color: #e3e3df;
-  font-family: 'IM Fell DW Pica', serif;
-  font-size: 50px; }
-
-form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  animation: neon1 1s ease-in-out infinite alternate;
-  color: black; }
-  form input {
+  background-image: url("../Content/img/lacebg.jpg");
+  background-size: cover;
+  font-family: "IM Fell DW Pica", serif; }
+  body h1 {
+    color: #e3e3df;
     text-align: center;
-    position: absolute;
-    margin-top: 40px;
-    font-size: .8em;
-    top: 80%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%); }
+    font-size: 3em;
+    padding-top: 50px; }
+  body .about {
+    position: relative;
+    top: 10vh;
+    left: 25vw;
+    width: 55%;
+    background-color: #e3e3df;
+    border: solid 1px white;
+    content: "";
+    display: table;
+    clear: both;
+    border-radius: 5px; }
+    body .about .madame-image {
+      float: right; }
+      body .about .madame-image img {
+        height: 500px;
+        border-radius: 5px;
+        padding-right: 20px; }
+    body .about .madame-content {
+      position: absolute;
+      left: 5%;
+      top: 12%;
+      float: left;
+      width: 70%;
+      text-align: center;
+      z-index: 50;
+      padding-left: 1px;
+      padding-right: 1px; }
+      body .about .madame-content p {
+        color: black;
+        font-size: 1.3em; }
 
-@keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #543939, 0 0 70px #543939, 0 0 80px #543939, 0 0 100px #543939, 0 0 150px #543939; }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #543939, 0 0 35px #543939, 0 0 40px #543939, 0 0 50px #543939, 0 0 75px #543939; } }
-
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=about.css.map */

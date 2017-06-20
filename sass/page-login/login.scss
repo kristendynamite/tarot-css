@@ -11,6 +11,8 @@ form {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  animation: neon1 1s ease-in-out infinite alternate;
+  color: black;
 
   input {
     text-align: center;
@@ -22,20 +24,6 @@ form {
     margin-right: -50%;
     transform: translate(-50%, -50%);
   }
-}
-
-a{
-  text-align: center;
-  position: absolute;
-  margin-top: 40px;
-  font-size: .8em;
-  top: 70%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  text-decoration: none;
-  color: black;
-  animation: neon1 1s ease-in-out infinite alternate;
 }
 
 @keyframes neon1 {
