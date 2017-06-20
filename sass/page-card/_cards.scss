@@ -4,7 +4,7 @@ body {
   background-color: rgba(149, 20, 20, 0.3);
   background-blend-mode: overlay;
   // font-family: 'Gorey', serif;
-  font-family: 'IM Fell DW Pica', serif;
+  font-family: $primary-font;
 }
 
 .nav{
@@ -57,7 +57,7 @@ button {
   padding: 8px;
   border-radius: 5px;
   border: none;
-  font-family: 'IM Fell DW Pica', serif;
+  font-family: $primary-font;
   font-weight: bold;
   font-size: 1.5em;
   background: $secondary-color;

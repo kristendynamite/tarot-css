@@ -374,133 +374,19 @@ body {
   overflow: hidden; }
 
 body {
-  background-image: url("../Content/img/lacebg.jpg");
-  background-size: cover;
-  background-color: rgba(149, 20, 20, 0.3);
-  background-blend-mode: overlay;
-  font-family: "IM Fell DW Pica", serif; }
-
-.nav ul {
-  display: inline-flex;
-  float: right;
-  margin-right: 10vw; }
-  .nav ul li {
-    list-style: none;
-    padding: 20px;
-    font-size: 1.5em; }
-    .nav ul li a {
-      text-decoration: none;
-      color: #a4a3a2; }
-      .nav ul li a:hover {
-        color: #724e4e;
-        font-weight: bold; }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  25% {
-    opacity: .2; }
-  50% {
-    opacity: .4; }
-  75% {
-    opacity: .7; }
-  100% {
-    opacity: 1; } }
-.text-box {
-  position: absolute;
-  top: 10vh;
-  left: 10vw;
-  font-size: 1.5em;
-  text-align: center; }
-  .text-box .divination {
-    border: 2px dotted #e3e3df;
-    border-radius: 5px;
-    color: #e3e3df;
-    animation: fadeIn 6s;
-    padding-left: 10px;
-    padding-right: 10px; }
-
-button {
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
+  background-color: black;
+  color: #e3e3df;
   font-family: "IM Fell DW Pica", serif;
-  font-weight: bold;
-  font-size: 1.5em;
-  background: #543939;
-  color: black;
-  margin-top: 30px; }
-  button:hover {
-    background: black;
-    color: #543939; }
+  font-size: 50px; }
 
-img {
-  height: 400px;
-  width: auto;
-  border-radius: 10px; }
-
-.card {
-  perspective: 700px;
+p {
   position: absolute;
-  left: 45vw;
-  top: 35vh;
-  animation-duration: 6s;
-  animation-fill-mode: forwards; }
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
 
-.card:hover .front {
-  transform: rotateY(-180deg); }
+#madame, #enter {
+  display: none; }
 
-.card:hover .back {
-  transform: rotateY(0deg); }
-
-.card:hover .face {
-  transition: all 0.8s ease-out; }
-
-.face {
-  position: absolute;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  transition: all 0.8s ease-out; }
-
-.front {
-  transform: rotateY(0deg); }
-
-.back {
-  transform: rotateY(180deg); }
-
-#bird {
-  animation-name: slideBottom; }
-
-#dog {
-  animation-name: slideLeft; }
-
-#ancestor {
-  animation-name: slideRight; }
-
-#sea {
-  animation-name: slideTop; }
-
-@keyframes slideRight {
-  from {
-    left: 45vw; }
-  to {
-    left: 60vw; } }
-@keyframes slideLeft {
-  from {
-    left: 45vw; }
-  to {
-    left: 30vw; } }
-@keyframes slideBottom {
-  from {
-    top: 40vh; }
-  to {
-    top: 68vh; } }
-@keyframes slideTop {
-  from {
-    top: 40vh; }
-  to {
-    top: 2vh; } }
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=enter.css.map */
