@@ -136,6 +136,7 @@ img {
 #card2 {
   animation-name: slideTop;
 }
+
 @keyframes slideRight {
 	from { left: 45vw; }
 	to { left: 60vw; }
@@ -151,4 +152,13 @@ img {
 @keyframes slideTop {
 	from { top: 40vh; }
 	to { top: 2vh; }
+}
+
+@keyframes neon-box {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $secondary-color, 0 0 70px $secondary-color, 0 0 80px $secondary-color, 0 0 100px $secondary-color, 0 0 150px $secondary-color;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $secondary-color, 0 0 35px $secondary-color, 0 0 40px $secondary-color, 0 0 50px $secondary-color, 0 0 75px $secondary-color;
+  }
 }
