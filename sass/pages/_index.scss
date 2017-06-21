@@ -3,11 +3,67 @@ body{
   color: $primary-color;
   font-family: $primary-font;
   font-size: 50px;
-  .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+}
+
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#what {
+  font-size: 1.5em;
+  animation:
+  fadeIn 4s ease-in,
+  fadeOut 2s 5s ease-out forwards;
+}
+
+#madame {
+  font-size: 1.5em;
+  animation:
+  moveIn 4s forwards,
+  fadeIn 4s 6s ease-in,
+  fadeOut 2s 10s ease-out forwards;
+}
+
+#enter {
+  font-size: 1.5em;
+  animation:
+  moveIn 14s,
+  fadeIn 2s 12s ease-in;
+  a {
+    text-decoration: none;
+    color: black;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0; font-size:.5em;}
+  100% {opacity: 1;font-size:1.5em;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1; }
+  25% {opacity: .7; }
+  50% {opacity: .4; }
+  75% {opacity: .1; }
+  100% {opacity: 0; }
+}
+
+@keyframes moveIn {
+  0% {left: -150%; opacity: 0;}
+  100% {left: 50%; opacity: 0;}
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $secondary-color, 0 0 70px $secondary-color, 0 0 80px $secondary-color, 0 0 100px $secondary-color, 0 0 150px $secondary-color;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $secondary-color, 0 0 35px $secondary-color, 0 0 40px $secondary-color, 0 0 50px $secondary-color, 0 0 75px $secondary-color;
   }
 }
