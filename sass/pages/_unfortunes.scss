@@ -1,0 +1,23 @@
+.unfortunes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clear: both;
+  width: 70%;
+  background-color: rgba(227, 227, 223, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  table {
+    text-align: left;
+    padding-bottom: 10px;
+    td:first-child{
+      font-weight: bold;
+      padding-right: 50px;
+    }
+    tr:nth-child(even){
+      background-color:rgba(84, 57, 57, 0.5);
+    }
+  }
+}
