@@ -547,7 +547,7 @@ body {
     width: 90%; }
     .about #madame-table img {
       margin-right: 10px; }
-  .about .dev-about {
+  .about .dev-about, .about .about-edward {
     padding: 10px; }
 
 .text {
@@ -648,5 +648,24 @@ body {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white; }
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px white, 0 0 35px white, 0 0 40px white, 0 0 50px white, 0 0 75px white; } }
+.glossary-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clear: both;
+  width: 70%;
+  background-color: rgba(227, 227, 223, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.5em; }
+  .glossary-container table {
+    text-align: left;
+    padding-bottom: 10px; }
+    .glossary-container table td:first-child {
+      font-weight: bold;
+      padding-right: 20px; }
+    .glossary-container table tr:nth-child(even) {
+      background-color: rgba(84, 57, 57, 0.5); }
 
 /*# sourceMappingURL=main.css.map */
