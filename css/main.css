@@ -371,9 +371,6 @@ template {
 
 @font-face {}
 body {
-  overflow: hidden; }
-
-body {
   background-image: url("../Content/img/lacebg.jpg");
   background-size: cover;
   background-color: rgba(149, 20, 20, 0.3);
@@ -514,41 +511,44 @@ body {
   background-image: url("../Content/img/lacebg.jpg");
   background-size: cover;
   font-family: "IM Fell DW Pica", serif; }
-  body .about h1 {
-    color: #e3e3df;
-    text-align: center;
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clear: both; }
+
+.about {
+  width: 70%;
+  background-color: rgba(227, 227, 223, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center; }
+  .about h1 {
+    color: black;
     font-size: 3em;
-    padding-top: 50px; }
-  body .about {
-    position: relative;
-    top: 10vh;
-    left: 25vw;
-    width: 55%;
-    background-color: #e3e3df;
-    border: solid 1px white;
-    content: "";
-    display: table;
-    clear: both;
-    border-radius: 5px; }
-    body .about .madame-image {
-      float: right; }
-      body .about .madame-image img {
-        height: 500px;
-        border-radius: 5px;
-        padding-right: 20px; }
-    body .about .madame-content {
-      position: absolute;
-      left: 5%;
-      top: 12%;
-      float: left;
-      width: 70%;
-      text-align: center;
-      z-index: 50;
-      padding-left: 1px;
-      padding-right: 1px; }
-      body .about .madame-content p {
-        color: black;
-        font-size: 1.3em; }
+    margin: 0;
+    text-align: center; }
+  .about p {
+    color: black;
+    font-size: 1.3em; }
+  .about #gorey-table {
+    text-align: justify;
+    width: 90%; }
+    .about #gorey-table img {
+      margin-left: 10px;
+      border: 5px solid black; }
+  .about #madame-table {
+    text-align: justify;
+    width: 90%; }
+    .about #madame-table img {
+      margin-right: 10px; }
+  .about .dev-about {
+    padding: 10px; }
 
 .text {
   background-color: black;
