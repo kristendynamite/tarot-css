@@ -2,10 +2,9 @@
   background-color: black;
   height: 100vh;
   width: 100vw;
-  color:  #e3e3df;
+  color: #e3e3df;
   font-family: 'IM Fell DW Pica', serif;
-  font-size: 50px;
-}
+  font-size: 50px; }
 
 .login p {
   position: absolute;
@@ -14,17 +13,15 @@
   margin-right: -50%;
   transform: translate(-50%, 50%);
   animation: neon1 1s ease-in-out infinite alternate;
-  color: black;
-}
+  color: black; }
 
 .login form {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%);
-
-  input {
+  transform: translate(-50%, -50%); }
+  .login form input {
     text-align: center;
     position: absolute;
     margin-top: 40px;
@@ -32,15 +29,12 @@
     top: 80%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
-  }
-}
+    transform: translate(-50%, -50%); }
 
 @keyframes neon1 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white;
-  }
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white; }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px white, 0 0 35px white, 0 0 40px white, 0 0 50px white, 0 0 75px white;
-  }
-}
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px white, 0 0 35px white, 0 0 40px white, 0 0 50px white, 0 0 75px white; } }
+
+/*# sourceMappingURL=login.css.map */
