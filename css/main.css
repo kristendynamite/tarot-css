@@ -435,6 +435,10 @@ button {
     background: black;
     color: #543939; }
 
+.populate-random-card {
+  height: 400px;
+  width: 206px; }
+
 img {
   height: 400px;
   width: auto;
@@ -552,6 +556,8 @@ body {
       margin-right: 10px; }
   .about .dev-about, .about .about-edward {
     padding: 10px; }
+    .about .dev-about a, .about .about-edward a {
+      color: #543939; }
 
 .text {
   background-color: black;

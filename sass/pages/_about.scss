@@ -53,6 +53,9 @@ body {
   }
 
   .dev-about, .about-edward {
+    a {
+      color: $secondary-color;
+    }
     padding: 10px;
   }
 }
